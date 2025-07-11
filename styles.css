@@ -132,7 +132,9 @@ footer {
 }
 
 .top-bar-left .top-logo {
-  height: 60px;
+  height: 40px;
+  max-width: 120px;
+  object-fit: contain;
 }
 
 .top-bar-center {
