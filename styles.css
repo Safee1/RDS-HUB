@@ -176,3 +176,37 @@ footer {
   height: 18px;
 }
 
+.top-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 0.5rem;
+  background-color: #0d213b;
+}
+
+.center-logo {
+  height: 60px;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #0d213b;
+  padding: 0.5rem 0 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
