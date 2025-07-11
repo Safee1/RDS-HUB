@@ -1,35 +1,45 @@
+/* Base styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #f0f4ff, #d0e0ff);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to right, #f9fafe, #dce9ff);
   color: #222;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background: #0a1c40;
+  background: #001a33;
   color: #fff;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
+header p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Navigation */
 nav {
   display: flex;
   justify-content: center;
-  background: #001f4d;
-  padding: 0.5rem 0;
+  background: #003366;
+  padding: 0.75rem 0;
 }
 
 nav a {
-  color: white;
-  margin: 0 1rem;
+  color: #fff;
+  margin: 0 1.5rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   transition: color 0.3s;
 }
 
@@ -37,40 +47,55 @@ nav a:hover {
   color: #ffcc00;
 }
 
+/* Container */
 .container {
-  max-width: 900px;
-  margin: 2rem auto;
+  max-width: 960px;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
+/* Headings */
 h2 {
   margin-top: 2rem;
-  color: #0a1c40;
+  color: #003366;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ccd;
+  padding-bottom: 0.3rem;
 }
 
+/* Paragraphs */
+.container p {
+  margin-bottom: 1rem;
+}
+
+/* Button */
 .button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background: #004aad;
+  background: #007bff;
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 5px;
+  font-weight: bold;
   margin-top: 1rem;
   transition: background 0.3s;
 }
 
 .button:hover {
-  background: #003a8c;
+  background: #0056b3;
 }
 
-footer {
-  text-align: center;
-  background: #0a1c40;
-  color: white;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
+/* Contact section */
 .contact p {
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+  background: #001a33;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
 }
