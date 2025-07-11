@@ -21,8 +21,8 @@ header {
 }
 
 .logo img {
-  height: 60px; /* or try 56px or 64px if you want even larger */
-  width: auto;  /* maintain logo proportions */
+  height: 80px;
+  width: auto;
 }
 
 .nav-links {
