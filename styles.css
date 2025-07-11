@@ -119,3 +119,58 @@ footer {
   padding: 1rem;
   margin-top: 2rem;
 }
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.top-bar-left .top-logo {
+  height: 60px;
+}
+
+.top-bar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.top-nav a {
+  margin: 0 10px;
+  color: red;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons i {
+  color: red;
+  margin: 0 5px;
+  font-size: 18px;
+}
+
+.trustpilot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.trustpilot-logo {
+  height: 18px;
+}
+
