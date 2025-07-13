@@ -57,46 +57,28 @@
 <p>We currently serve Birmingham, Wolverhampton, Walsall, and Ilford — with more locations coming soon as we continue to expand.</p>
 
   <h2>Register Your Interest</h2>
-  <form action="https://formspree.io/f/mexample" method="POST">
-    <label for="fullName">Full Name:</label>
-    <input type="text" name="fullName" required>
-
-    <label for="email">Email:</label>
-    <input type="email" name="email" required>
-
-    <label for="phone">Phone Number:</label>
-    <input type="text" name="phone" required>
-
-    <label for="adi">ADI Number (if qualified):</label>
-    <input type="text" name="adi">
-
-    <label for="address">Address:</label>
-    <input type="text" name="address" required>
-
-    <label for="postcode">Postcode:</label>
-    <input type="text" name="postcode" required>
-
-    <label for="car">Car Model & Registration:</label>
-    <input type="text" name="car">
-
-    <label for="transmission">Transmission:</label>
+  <form action="YOUR_FORM_HANDLER" method="POST" class="instructor-form">
+  <div><label>Full Name:</label><input type="text" name="fullName" required></div>
+  <div><label>Email:</label><input type="email" name="email" required></div>
+  <div><label>Phone Number:</label><input type="text" name="phone" required></div>
+  <div><label>ADI Number (if qualified):</label><input type="text" name="adi"></div>
+  <div><label>Address:</label><input type="text" name="address" required></div>
+  <div><label>Postcode:</label><input type="text" name="postcode" required></div>
+  <div><label>Car Model & Registration:</label><input type="text" name="car"></div>
+  <div>
+    <label>Transmission:</label>
     <select name="transmission" required>
       <option value="manual">Manual</option>
       <option value="automatic">Automatic</option>
     </select>
-
-    <label for="areas">Areas Covered:</label>
-    <input type="text" name="areas" required>
-
-    <label for="message">Your Message (Optional):</label>
-    <textarea name="message"></textarea>
-
-    <label>
-      <input type="checkbox" required> I accept the terms and conditions
-    </label>
-
-    <button type="submit">Apply Now</button>
-  </form>
+  </div>
+  <div><label>Areas Covered:</label><input type="text" name="areas" required></div>
+  <div><label>Your Message (Optional):</label><textarea name="message"></textarea></div>
+  <div>
+    <label><input type="checkbox" required> I accept the terms and conditions</label>
+  </div>
+  <div><button type="submit">Apply Now</button></div>
+</form>
 
   <p style="margin-top: 2rem;"><strong>Have questions?</strong> Contact us directly or send a message — we’ll get back to you within 24 hours.</p>
 </section>
