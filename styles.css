@@ -11,7 +11,6 @@ header {
   background-color: #0d213b;
 }
 
-/* Top Logo - Centered */
 .top-logo-wrapper {
   text-align: center;
   padding: 1rem 0 0.5rem;
@@ -24,7 +23,6 @@ header {
   object-fit: contain;
 }
 
-/* Centered nav links UNDER logo */
 nav {
   background-color: #0d213b;
   padding: 1rem 0;
