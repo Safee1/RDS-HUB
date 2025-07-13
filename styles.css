@@ -211,3 +211,45 @@ footer {
 .trustpilot-logo {
   height: 18px;
 }
+
+.instructor-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.instructor-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.instructor-form input,
+.instructor-form select,
+.instructor-form textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.instructor-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.instructor-form button {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  background: #0d213b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.instructor-form button:hover {
+  background: #1c365f;
+}
+
