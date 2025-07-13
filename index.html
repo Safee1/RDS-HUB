@@ -1,62 +1,99 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RDS HUB – Driving School</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f6f9fc;
+      color: #222;
+      text-align: center;
+    }
+
+    header {
+      background-color: white;
+      padding: 20px 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header img {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #111;
+    }
+
+    .lesson-prices p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #e4e4e4;
+      font-size: 14px;
+    }
+  </style>
 </head>
-  
 <body>
- <header>
-  <div class="top-logo-wrapper">
-    <img src="your-logo.png" alt="Logo" class="center-logo">
-  </div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Lessons</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <section class="hero" id="home">
-    <div class="hero-content">
-      <h1>Reliable Driving Instruction in Walsall</h1>
-      <p>Helping learners build confidence with a modern and professional approach.</p>
-      <a href="#contact" class="cta-button">Book a Lesson</a>
+  <header>
+    <div class="header">
+      <img src="logo_shaved.png" alt="RDS HUB Logo" />
+      <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#lessons">Lessons</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
+  </header>
+
+  <section id="home">
+    <h2>Reliable Driving Instruction in Walsall</h2>
+    <p>Helping learners build confidence with a modern and professional approach.</p>
+    <p><a href="#contact">Book a Lesson</a></p>
   </section>
 
-  <section class="about" id="about">
+  <section id="about">
     <h2>About Us</h2>
-    <p>RDS HUB (Rana Driving School) is a family-run driving school based in Walsall. For over 22 years, my father has helped learners build confidence behind the wheel. Now, I'm proud to carry on that legacy with a modern touch. With a first-class honours degree in Quantity Surveying, I bring precision, professionalism, and passion into every lesson. Whether you're just starting out or need a refresher, RDS is here to help.</p>
+    <p>RDS HUB (Rana Driving School) is a family-run driving school based in Walsall. For over 22 years, my father has helped learners build confidence behind the wheel. Now, I’m proud to carry on that legacy with a modern touch. With a first-class degree in Quantity Surveying, I bring precision, professionalism, and passion to every lesson.</p>
   </section>
 
-  <section class="pricing" id="pricing">
+  <section id="lessons">
     <h2>Lesson Prices</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>1 Hour Lesson</h3>
-        <p>Manual or Auto</p>
-        <strong>£32</strong>
-      </div>
-      <div class="card">
-        <h3>1.5 Hour Lesson</h3>
-        <p>Manual or Auto</p>
-        <strong>£48</strong>
-      </div>
-      <div class="card">
-        <h3>2 Hour Lesson</h3>
-        <p>Manual or Auto</p>
-        <strong>£62</strong>
-      </div>
+    <div class="lesson-prices">
+      <p>1 Hour Lesson – £32</p>
+      <p>1.5 Hour Lesson – £48</p>
+      <p>2 Hour Lesson – £62</p>
+      <p>Manual or Auto</p>
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Phone:</strong> <a href="tel:07828429880">07828 429880</a></p>
     <p><strong>Email:</strong> <a href="mailto:kashif.rashid4434@gmail.com">kashif.rashid4434@gmail.com</a></p>
@@ -64,8 +101,7 @@
   </section>
 
   <footer>
-    <p>© 2025 RDS HUB – Rana Driving School. All rights reserved.</p>
+    © 2025 RDS HUB – Rana Driving School. All rights reserved.
   </footer>
 </body>
 </html>
-
