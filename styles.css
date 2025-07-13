@@ -7,7 +7,6 @@ body {
   text-align: center;
 }
 
-/* Centered header with logo and nav links below it */
 .header {
   padding: 30px 0;
   background-color: #fff;
@@ -34,12 +33,10 @@ body {
   font-size: 18px;
 }
 
-/* Optional hover effect */
 .nav a:hover {
   color: #0056b3;
 }
 
-/* Footer */
 footer {
   background-color: #e4e4e4;
   padding: 15px 0;
