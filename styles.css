@@ -9,10 +9,6 @@ body {
 /* Header styling */
 header {
   background-color: #0d213b;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 0;
 }
 
 /* Top Logo - Centered */
@@ -28,21 +24,10 @@ header {
   object-fit: contain;
 }
 
-/* NEW LOGO STYLE (Fallback if <img> is in header directly) */
-header img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 20px;
-}
-
 /* Centered nav links UNDER logo */
 nav {
   background-color: #0d213b;
   padding: 1rem 0;
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .nav-links {
@@ -55,19 +40,15 @@ nav {
   padding: 0;
 }
 
-.nav-links li a,
-nav a {
+.nav-links li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-  transition: color 0.3s;
 }
 
-.nav-links li a:hover,
-nav a:hover {
+.nav-links li a:hover {
   text-decoration: underline;
-  color: #f0c000;
 }
 
 /* Hero Section */
