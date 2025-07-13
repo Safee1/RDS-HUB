@@ -3,64 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RDS HUB – Driving Lessons in Walsall</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>RDS HUB LTD - Driving School</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://kit.fontawesome.com/a2e8d0339a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    <img src="logo_shaved.png" alt="RDS HUB Logo" class="logo"/>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Lessons</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="#" class="cta-button">Book a Lesson</a>
-  </header>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="top-logo">
+    </div>
+    <div class="top-bar-center top-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#lessons">Lessons</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="top-bar-right">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="trustpilot">
+        <img src="assets/trustpilot.png" alt="Trustpilot" class="trustpilot-logo">
+        <span>Rated Excellent</span>
+      </div>
+    </div>
+  </div>
 
-  <section class="hero">
-    <h1>Reliable Driving Instruction in Walsall</h1>
-    <p>Helping learners build confidence with a modern and professional approach.</p>
-    <a href="#" class="cta-button">Book a Lesson</a>
+  <!-- Center Logo -->
+  <div class="top-logo-wrapper">
+    <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="center-logo">
+  </div>
+
+  <!-- Nav -->
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#lessons">Lessons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Learn to Drive with Confidence</h1>
+    <p>Professional, friendly, and DVSA-approved instructors to help you pass fast.</p>
+    <a href="#contact" class="cta-button">Book Your Lesson</a>
   </section>
 
-  <section class="about">
-    <h2>About Us</h2>
-    <p>RDS HUB (Rana Driving School) is a family-run driving school based in Walsall. For over 22 years, my father helped learners build confidence behind the wheel. Now, I carry on that legacy with a modern touch. With a first-class degree in Quantity Surveying, I bring precision, professionalism, and passion into every lesson.</p>
+  <!-- About -->
+  <section class="about" id="about">
+    <h2>About RDS HUB LTD</h2>
+    <p>We are an experienced driving school dedicated to helping learners become safe, confident drivers. We offer flexible scheduling, modern vehicles, and affordable pricing.</p>
   </section>
 
-  <section class="lessons">
-    <h2>Lesson Prices</h2>
-    <div class="lesson-grid">
-      <div class="lesson-card">
-        <h3>1 Hour Lesson</h3>
-        <p>Manual or Auto</p>
-        <span>£32</span>
+  <!-- Lessons -->
+  <section class="pricing" id="lessons">
+    <h2>Lesson Packages</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Beginner</h3>
+        <p>10 Hours | Manual</p>
+        <p>£270</p>
       </div>
-      <div class="lesson-card">
-        <h3>1.5 Hour Lesson</h3>
-        <p>Manual or Auto</p>
-        <span>£48</span>
+      <div class="card">
+        <h3>Intermediate</h3>
+        <p>20 Hours | Manual/Auto</p>
+        <p>£530</p>
       </div>
-      <div class="lesson-card">
-        <h3>2 Hour Lesson</h3>
-        <p>Manual or Auto</p>
-        <span>£62</span>
+      <div class="card">
+        <h3>Pass Plus</h3>
+        <p>6 Hours</p>
+        <p>£180</p>
       </div>
     </div>
   </section>
 
-  <section class="contact">
+  <!-- Contact -->
+  <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:rdsdrivingschool@gmail.com">rdsdrivingschool@gmail.com</a></p>
-    <p>Phone: 07700 123456</p>
+    <p>Call us today on <strong>07912 345 678</strong> or email <strong>info@rdshub.co.uk</strong></p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 RDS HUB – All rights reserved.</p>
+    &copy; 2025 RDS HUB LTD. All rights reserved.
   </footer>
 
 </body>
