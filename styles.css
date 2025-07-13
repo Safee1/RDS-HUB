@@ -30,25 +30,48 @@ nav {
   padding: 1rem 0;
 }
 
+./* Base nav */
 .nav-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  gap: 2rem; /* adjust as needed */
+}
+
+.nav-links li {
+  position: relative;
 }
 
 .nav-links li a {
-  color: white;
   text-decoration: none;
+  color: white; /* adjust to match your theme */
   font-weight: bold;
-  font-size: 1rem;
 }
 
-.nav-links li a:hover {
-  text-decoration: underline;
+/* Dropdown menu (hidden by default) */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff; /* white background */
+  min-width: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 100;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #222;
+  white-space: nowrap;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* Hero Section */
