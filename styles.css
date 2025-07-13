@@ -1,45 +1,189 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
   color: #111;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #0d213b;
+}
+
+/* Top Logo - Centered */
+.top-logo-wrapper {
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+  background-color: #0d213b;
+}
+
+.center-logo {
+  height: 100px;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+/* Centered nav links UNDER logo */
+nav {
+  background-color: #0d213b;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1a2e47, #234472);
+  color: white;
+  padding: 100px 20px;
   text-align: center;
 }
 
-.header {
-  padding: 30px 0;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  background-color: #fcb900;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #e6a800;
+}
+
+/* General Section Styling */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about,
+.contact {
   background-color: #fff;
 }
 
-.header img {
-  max-width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
+.pricing {
+  background-color: #eef3f8;
 }
 
-.nav {
+/* Cards */
+.cards {
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
-.nav a {
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #0d213b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Optional Top Bar (if used) */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.top-bar-left .top-logo {
+  height: 40px;
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.top-bar-center {
+  flex: 1;
+  text-align: center;
+}
+
+.top-nav a {
+  margin: 0 10px;
+  color: red;
   text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
+  font-weight: 500;
+}
+
+.top-nav a:hover {
+  text-decoration: underline;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-icons i {
+  color: red;
+  margin: 0 5px;
   font-size: 18px;
 }
 
-.nav a:hover {
-  color: #0056b3;
+.trustpilot {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
 }
 
-footer {
-  background-color: #e4e4e4;
-  padding: 15px 0;
-  margin-top: 40px;
-  font-size: 14px;
+.trustpilot-logo {
+  height: 18px;
 }
