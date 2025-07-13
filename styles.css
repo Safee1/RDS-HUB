@@ -1,107 +1,130 @@
-/* Reset + Base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f1f2f6;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
   color: #111;
   line-height: 1.6;
 }
 
 /* Header */
-.site-header {
-  background-color: #0a2342;
-  color: white;
-  padding: 20px 0;
+header {
+  background-color: #0d213b;
+}
+
+/* Centered Logo */
+.top-logo-wrapper {
   text-align: center;
+  padding: 1rem 0 0.5rem;
 }
 
-.logo-container {
-  margin-bottom: 10px;
+.center-logo {
+  height: 100px;
+  max-width: 200px;
+  object-fit: contain;
 }
 
-.logo {
-  height: 60px;
-  max-width: 180px;
+/* Menu centered under logo */
+nav {
+  background-color: #0d213b;
+  padding-bottom: 1rem;
 }
 
-/* Nav Menu */
-.navbar ul {
-  list-style: none;
-  display: inline-flex;
-  gap: 30px;
+.nav-links {
+  display: flex;
   justify-content: center;
-  margin-top: 10px;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar a {
+.nav-links li a {
+  color: white;
   text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-.navbar a:hover {
-  color: #f0db4f;
-}
-
-/* Content Layout */
-.content {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-h1, h2, h3 {
-  color: #0a2342;
-  margin-bottom: 12px;
-}
-
-p, li {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Links */
-a {
-  color: #004aad;
+.nav-links li a:hover {
   text-decoration: underline;
 }
 
-a:hover {
-  color: #0a2342;
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1a2e47, #234472);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
 }
 
-/* Prices Section */
-.lesson-price {
-  margin-top: 30px;
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.lesson-price h3 {
-  font-size: 18px;
-  margin-top: 15px;
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Contact Section */
-.contact-info {
-  margin-top: 40px;
+.cta-button {
+  background-color: #fcb900;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.contact-info a {
-  color: #004aad;
-  font-weight: 500;
+.cta-button:hover {
+  background-color: #e6a800;
+}
+
+/* General Sections */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about,
+.contact {
+  background-color: #fff;
+}
+
+.pricing {
+  background-color: #eef3f8;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 220px;
+  max-width: 250px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
 }
 
 /* Footer */
 footer {
+  background-color: #0d213b;
+  color: white;
   text-align: center;
-  margin-top: 60px;
-  padding: 20px;
-  background-color: #e4e4e4;
-  font-size: 14px;
+  padding: 1rem;
+  margin-top: 2rem;
 }
