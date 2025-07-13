@@ -1,4 +1,3 @@
-/* styles.css */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -21,29 +20,26 @@ header {
 }
 
 .logo img {
-  height: 100px;
+  height: 50px;
+  max-height: 50px;
   width: auto;
-  max-height: 100px;
   object-fit: contain;
   display: block;
 }
 
-.navbar ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  padding: 0;
-  margin: 0;
 }
 
-.navbar ul li a {
+.nav-links a {
   color: #fff;
   text-decoration: none;
   font-weight: 500;
-  font-size: 1rem;
 }
 
-.navbar ul li a:hover {
+.nav-links a:hover {
   text-decoration: underline;
 }
 
@@ -123,7 +119,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Top bar (optional) */
 .top-bar {
   display: flex;
   align-items: center;
@@ -180,7 +175,6 @@ footer {
   height: 18px;
 }
 
-/* Center logo bar */
 .top-logo-wrapper {
   display: flex;
   justify-content: center;
@@ -195,9 +189,24 @@ footer {
   object-fit: contain;
 }
 
-/* NAVBAR – Clean and Simple */
-nav {
+.navbar {
+  display: flex;
+  justify-content: center;
   background-color: #0d213b;
+  padding: 0.5rem 0 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 nav ul {
@@ -216,5 +225,22 @@ nav ul li a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
