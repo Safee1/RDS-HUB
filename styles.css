@@ -253,3 +253,9 @@ footer {
   background: #1c365f;
 }
 
+.promo-highlight {
+  color: #d90000;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
