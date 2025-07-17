@@ -646,11 +646,8 @@ footer {
   color: #fcb900;
 }
 
-.hero-block {
-  background: #0d213b;
-  color: white;
-  text-align: center;
-  padding: 80px 20px 60px;
+.hero-block.tight-hero {
+  padding: 60px 20px 30px;
 }
 
 .hero-block h1 {
@@ -803,3 +800,10 @@ footer {
 .tight-hero {
   padding: 50px 20px 40px;
 }
+.how-it-works {
+  margin-top: 20px;
+}
+.how-it-works {
+  padding: 30px 20px;
+}
+
