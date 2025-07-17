@@ -478,3 +478,88 @@ footer {
   color: #fcb900;
 }
 
+.improved-hero {
+  background: linear-gradient(to right, #102a43, #1e3a5f);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.btn-hero {
+  background: #fcb900;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.btn-hero:hover {
+  background: #e6a800;
+}
+
+.trust-highlight {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+.trust-highlight i {
+  margin: 0 8px 0 12px;
+  color: #fcb900;
+}
+
+.how-it-works {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.steps-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.step {
+  max-width: 220px;
+}
+
+.icon-step {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  background: #0d213b;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 25px 15px;
+  border-top: 3px solid #fcb900;
+}
+
+.trust-item i {
+  margin-right: 8px;
+  color: #fcb900;
+}
+
+
