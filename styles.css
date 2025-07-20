@@ -327,17 +327,23 @@ footer {
 }
 
 .car-listings {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .car-listings {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .car-card {
   background: white;
   border-radius: 10px;
   padding: 20px;
-  width: 350px;
+  width: 100%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
