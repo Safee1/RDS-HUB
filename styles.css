@@ -869,43 +869,44 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Logo adjustments */
   .top-logo-wrapper {
     padding: 0.5rem 0;
   }
 
   .center-logo {
     height: 55px;
-    max-width: 150px;
+    max-width: 140px;
   }
 
-  /* Nav layout cleanup */
   nav {
     background-color: #0d213b;
     padding: 0.5rem 0;
   }
 
   .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
   }
 
   .nav-links li {
-    width: 100%;
+    flex: 1 1 45%;
     text-align: center;
   }
 
   .nav-links li a {
     display: block;
-    padding: 0.6rem;
-    font-size: 1rem;
+    padding: 0.5rem;
+    font-size: 0.9rem;
     color: white;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
   }
 
-  .nav-links li:last-child a {
-    border-bottom: none;
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.05);
   }
 }
 
