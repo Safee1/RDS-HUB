@@ -870,43 +870,44 @@ footer {
 
 @media (max-width: 768px) {
   .top-logo-wrapper {
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
   }
 
   .center-logo {
     height: 55px;
-    max-width: 140px;
+    max-width: 130px;
   }
 
   nav {
     background-color: #0d213b;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
   }
 
   .nav-links {
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.6rem 1rem;
     padding: 0;
   }
 
   .nav-links li {
-    flex: 1 1 45%;
-    text-align: center;
+    list-style: none;
   }
 
   .nav-links li a {
-    display: block;
-    padding: 0.5rem;
-    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 500;
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 4px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: background 0.2s ease;
   }
 
   .nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.15);
   }
 }
 
