@@ -809,14 +809,29 @@ footer {
 }
 
 .rds-offer-box {
-  background: #ffe9e9;
-  padding: 0.8rem;
-  border-left: 4px solid #e53935;
+  background: #fff6f6;
+  border-left: 4px solid #d62828;
+  padding: 1rem;
   font-size: 0.9rem;
-  line-height: 1.4;
-  font-weight: bold;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
 }
 
+.rds-offer-box ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.rds-offer-box li {
+  margin-bottom: 6px;
+  list-style-type: disc;
+}
+
+.rds-offer-box strong {
+  font-weight: 600;
+  color: #111;
+}
 .pricing-and-offer {
   margin-bottom: 1rem;
 }
