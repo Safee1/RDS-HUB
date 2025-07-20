@@ -284,24 +284,24 @@ footer {
 
 .benefits-grid {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem 1rem 0;
+  margin: 0 auto;
   max-width: 1000px;
-  margin: 2rem auto;
-  padding: 1rem 2rem;
-  gap: 2rem;
 }
 
 .benefit {
   flex: 1;
-  text-align: center;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.85rem;
+  line-height: 1.3;
+  max-width: 180px;
 }
 
 .benefit img {
   width: 36px;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .benefit p {
@@ -319,8 +319,11 @@ footer {
     flex: 0 1 45%;
   }
   .why-choose-us {
-  margin-bottom: 1rem;
-  padding-bottom: 0;
+  padding: 40px 20px 30px; /* tighten bottom */
+  margin-bottom: 0;
+  background: #f8f9fc; /* subtle contrast */
+  text-align: center;
+  border-radius: 12px;
 }
 }
 
