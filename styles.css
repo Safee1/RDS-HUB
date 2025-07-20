@@ -868,3 +868,52 @@ footer {
   color: #2e7d32;
 }
 
+@media (max-width: 768px) {
+  /* Header and Logo */
+  .top-logo-wrapper {
+    padding: 0.5rem 0;
+  }
+
+  .center-logo {
+    height: 60px;
+    max-width: 140px;
+  }
+
+  /* Navigation layout */
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  /* Section spacing */
+  section {
+    padding: 30px 15px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Car cards & offer boxes */
+  .car-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .rds-offer-box {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  /* Fix chat bubble overlap (Tidio) */
+  #tidio-chat {
+    bottom: 80px !important;
+  }
+}
+
