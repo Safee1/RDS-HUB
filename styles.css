@@ -985,7 +985,21 @@ section,
     max-width: none;
   }
 }
-  
+  @media (max-width: 768px) {
+  .benefits-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .benefit {
+    font-size: 0.7rem;
+    line-height: 1.2;
+  }
+
+  .benefit img {
+    width: 28px;
+  }
+}
+
 }
 
   /* Section spacing */
