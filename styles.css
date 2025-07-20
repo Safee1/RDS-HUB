@@ -869,22 +869,45 @@ footer {
 }
 
 @media (max-width: 768px) {
-  /* Header and Logo */
+  /* Logo adjustments */
   .top-logo-wrapper {
     padding: 0.5rem 0;
   }
 
   .center-logo {
-    height: 60px;
-    max-width: 140px;
+    height: 55px;
+    max-width: 150px;
   }
 
-  /* Navigation layout */
+  /* Nav layout cleanup */
+  nav {
+    background-color: #0d213b;
+    padding: 0.5rem 0;
+  }
+
   .nav-links {
     flex-direction: column;
-    gap: 0.5rem;
     align-items: center;
+    gap: 0.3rem;
   }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    padding: 0.6rem;
+    font-size: 1rem;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links li:last-child a {
+    border-bottom: none;
+  }
+}
 
   /* Section spacing */
   section {
