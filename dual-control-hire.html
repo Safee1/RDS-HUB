@@ -11,23 +11,43 @@
     <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="center-logo">
   </div>
 
-  <nav> 
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li class="dropdown">
-        <a href="services.html">Practical Test Services</a>
-        <ul class="dropdown-menu">
-          <li><a href="lesson-prices.html">Lesson Prices</a></li>
-          <li><a href="car-for-test.html">xxx</a></li>
-          <li><a href="become-instructor.html">Become an Instructor</a></li>
-        </ul>
-      </li>
-      <li><a href="dual-control-hire.html">Dual Control Car Leasing & Hire</a></li>
-      <li><a href="reviews.html">Reviews</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+ <!-- RDS HUB Navbar -->
+<nav class="bg-[#0b2447] text-white w-full">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <!-- Logo centered on mobile, left on desktop -->
+    <div class="flex-1 flex justify-center md:justify-start">
+      <img src="/logo.png" alt="RDS HUB" class="h-12" />
+    </div>
+
+    <!-- Mobile menu toggle -->
+    <div class="md:hidden">
+      <button id="mobile-menu-button" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Desktop nav links -->
+    <div class="hidden md:flex space-x-6 text-sm font-semibold">
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="#test" class="hover:text-yellow-400">Practical Test Services</a>
+      <a href="#dual" class="hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
+      <a href="#reviews" class="hover:text-yellow-400">Reviews</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    </div>
+  </div>
+
+  <!-- Mobile nav links -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm font-semibold">
+    <a href="#about" class="block hover:text-yellow-400">About</a>
+    <a href="#test" class="block hover:text-yellow-400">Practical Test Services</a>
+    <a href="#dual" class="block hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
+    <a href="#reviews" class="block hover:text-yellow-400">Reviews</a>
+    <a href="#contact" class="block hover:text-yellow-400">Contact</a>
+  </div>
+</nav>
 
   <div class="main-container">
 
@@ -250,6 +270,14 @@
 
   <!-- ✅ Tidio Chat Script -->
   <script src="https://code.tidio.co/nw4qbqb3b2jk4g37pf5fetictrwy9zds.js" async></script>
+
+    <script>
+  document.getElementById("mobile-menu-button").addEventListener("click", function () {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+  });
+</script>
+
 </body>
 </html>
 
