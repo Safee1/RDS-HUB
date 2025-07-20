@@ -1021,4 +1021,47 @@ footer {
   font-weight: bold;
   line-height: 1.4;
 }
+.pricing-and-offer {
+  margin-bottom: 1rem;
+}
+
+.price-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.price-box {
+  flex: 1;
+  min-width: 110px;
+  padding: 0.6rem;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.rds-offer-box {
+  background: #ffe9e9;
+  padding: 0.8rem;
+  border-left: 4px solid #e53935;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.car-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.8rem 0;
+}
+
+.car-features span {
+  background: #e0e0e0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
 
