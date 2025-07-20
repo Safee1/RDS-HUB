@@ -287,28 +287,34 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  margin-top: 1.5rem;
-  text-align: center;
+  margin-top: 1rem;
+  padding: 0;
 }
 
 .benefit {
-  flex: 1 1 200px;
-  max-width: 220px;
+  flex: 1 1 160px;
+  max-width: 180px;
+  text-align: center;
 }
 
 .benefit img {
-  width: 50px;
-  margin-bottom: 10px;
+  width: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.benefit p {
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 @media (max-width: 600px) {
   .benefits-grid {
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
   }
 
   .benefit {
-    max-width: 100%;
+    flex: 0 1 45%;
   }
 }
 
