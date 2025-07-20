@@ -1,3 +1,5 @@
+/* CLEANED FULL CSS (No Duplicates Removed Visually) */
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -6,12 +8,10 @@ body {
   line-height: 1.6;
 }
 
-/* Header styling */
 header {
   background-color: #0d213b;
 }
 
-/* Top Logo - Centered */
 .top-logo-wrapper {
   text-align: center;
   padding: 1rem 0 0.5rem;
@@ -24,7 +24,6 @@ header {
   object-fit: contain;
 }
 
-/* Centered nav links UNDER logo */
 nav {
   background-color: #0d213b;
   padding: 1rem 0;
@@ -49,7 +48,6 @@ nav {
   font-weight: bold;
 }
 
-/* Dropdown styles */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -75,7 +73,6 @@ nav {
   display: block;
 }
 
-/* Hero Section */
 .hero {
   background: linear-gradient(to right, #1a2e47, #234472);
   color: white;
@@ -106,7 +103,6 @@ nav {
   background-color: #e6a800;
 }
 
-/* General Section Styling */
 section {
   padding: 60px 20px;
   max-width: 900px;
@@ -122,7 +118,6 @@ section {
   background-color: #eef3f8;
 }
 
-/* Cards */
 .cards {
   display: flex;
   gap: 1rem;
@@ -145,8 +140,6 @@ section {
 .card h3 {
   margin-top: 0;
 }
-
-/* Footer */
 footer {
   background-color: #0d213b;
   color: white;
@@ -155,7 +148,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Top Bar (extra content if used) */
 .top-bar {
   display: flex;
   align-items: center;
@@ -278,7 +270,6 @@ footer {
   text-decoration: none;
   border-radius: 5px;
 }
-
 .note {
   font-size: 0.9rem;
   margin-top: 10px;
@@ -308,14 +299,13 @@ footer {
   height: auto;
   margin-bottom: 10px;
 }
-/* Container for page content */
+
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-/* Car listings section */
 .car-listings {
   display: flex;
   flex-wrap: wrap;
@@ -323,7 +313,6 @@ footer {
   justify-content: center;
 }
 
-/* Each car card */
 .car-card {
   background: white;
   border-radius: 10px;
@@ -333,7 +322,6 @@ footer {
   text-align: center;
 }
 
-/* Car image inside card */
 .car-card img {
   width: 100%;
   height: auto;
@@ -341,13 +329,11 @@ footer {
   margin-top: 10px;
 }
 
-/* Title inside card */
 .car-card h3 {
   margin-top: 0;
   color: #0d1b2a;
 }
 
-/* Button on each card */
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -429,17 +415,11 @@ footer {
   font-weight: bold;
   text-decoration: none;
   transition: background 0.2s ease;
+  display: inline-block;
 }
 
 .btn-hero:hover {
   background: #e6a800;
-}
-
-.improved-hero {
-  background: linear-gradient(to right, #102a43, #1e3a5f);
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
 }
 
 .hero-content h1 {
@@ -452,21 +432,6 @@ footer {
   margin-bottom: 20px;
 }
 
-.btn-hero {
-  background: #fcb900;
-  color: #000;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.2s ease;
-}
-
-.btn-hero:hover {
-  background: #e6a800;
-}
-
 .trust-highlight {
   margin-top: 15px;
   font-size: 0.95rem;
@@ -476,67 +441,6 @@ footer {
 .trust-highlight i {
   margin: 0 8px 0 12px;
   color: #fcb900;
-}
-
-.improved-hero {
-  background: linear-gradient(to right, #102a43, #1e3a5f);
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 2.4rem;
-  margin-bottom: 10px;
-}
-
-.hero-sub {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.btn-hero {
-  background: #fcb900;
-  color: #000;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.2s ease;
-}
-
-.btn-hero:hover {
-  background: #e6a800;
-}
-
-.trust-highlight {
-  margin-top: 15px;
-  font-size: 0.95rem;
-  color: #eee;
-}
-
-.trust-highlight i {
-  margin: 0 8px 0 12px;
-  color: #fcb900;
-}
-
-.how-it-works {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.steps-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.step {
-  max-width: 220px;
 }
 
 .icon-step {
@@ -545,98 +449,9 @@ footer {
 }
 
 .trust-strip {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 25px;
-  background: #0d213b;
-  color: #fff;
   font-size: 1rem;
   font-weight: 600;
-  padding: 25px 15px;
-  border-top: 3px solid #fcb900;
-}
-
-.trust-item i {
-  margin-right: 8px;
-  color: #fcb900;
-}
-
-.improved-hero {
-  background: linear-gradient(to right, #102a43, #1e3a5f);
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.hero-content h1 {
-  font-size: 2.4rem;
-  margin-bottom: 10px;
-}
-
-.hero-sub {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-}
-
-.btn-hero {
-  background: #fcb900;
-  color: #000;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  transition: background 0.2s ease;
-}
-
-.btn-hero:hover {
-  background: #e6a800;
-}
-
-.trust-highlight {
-  margin-top: 15px;
-  font-size: 0.95rem;
-  color: #eee;
-}
-
-.trust-highlight i {
-  margin: 0 8px 0 12px;
-  color: #fcb900;
-}
-
-.how-it-works {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.steps-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.step {
-  max-width: 220px;
-}
-
-.icon-step {
-  color: #0077cc;
-  margin-bottom: 10px;
-}
-
-.trust-strip {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 25px;
-  background: #0d213b;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
   padding: 25px 15px;
   border-top: 3px solid #fcb900;
 }
@@ -724,7 +539,6 @@ footer {
 .btn-price {
   background: #0077cc;
 }
-
 .test-centres {
   padding: 60px 20px;
   text-align: center;
@@ -760,24 +574,8 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Tighten hero spacing */
 .tight-hero {
   padding: 50px 20px 40px;
-}
-
-/* How It Works Section */
-.how-it-works {
-  padding: 60px 20px;
-  background: #fff;
-  text-align: center;
-}
-
-.steps-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 .step {
@@ -785,7 +583,7 @@ footer {
   background: #f9f9f9;
   padding: 20px;
   border-radius: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .step img {
@@ -795,22 +593,6 @@ footer {
 
 .step h3 {
   margin-bottom: 10px;
-}
-
-.tight-hero {
-  padding: 50px 20px 40px;
-}
-.how-it-works {
-  margin-top: 20px;
-}
-.how-it-works {
-  padding: 30px 20px;
-}
-
-.test-centres {
-  padding: 40px 20px;
-  background: #fff;
-  text-align: center;
 }
 
 .test-centres h2 {
@@ -997,58 +779,7 @@ footer {
   text-align: center;
   border: 1px solid #ccc;
   border-radius: 6px;
-}
-
-.car-features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
-}
-
-.car-features span {
-  background: #e0e0e0;
-  padding: 0.3rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.9rem;
-}
-
-.rds-offer-box {
-  background: #ffe4e4;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 5px solid #e53935;
-  font-weight: bold;
-  line-height: 1.4;
-}
-.pricing-and-offer {
-  margin-bottom: 1rem;
-}
-
-.price-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.8rem;
-}
-
-.price-box {
-  flex: 1;
-  min-width: 110px;
-  padding: 0.6rem;
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 0.95rem;
-}
-
-.rds-offer-box {
-  background: #ffe9e9;
-  padding: 0.8rem;
-  border-left: 4px solid #e53935;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.85rem;
 }
 
 .car-features {
@@ -1063,5 +794,18 @@ footer {
   padding: 0.3rem 0.6rem;
   border-radius: 3px;
   font-size: 0.85rem;
+}
+
+.rds-offer-box {
+  background: #ffe9e9;
+  padding: 0.8rem;
+  border-left: 4px solid #e53935;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.pricing-and-offer {
+  margin-bottom: 1rem;
 }
 
