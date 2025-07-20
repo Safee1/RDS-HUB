@@ -284,26 +284,24 @@ footer {
 
 .benefits-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.8rem 1rem;
-  justify-items: center;
-  align-items: start;
-  margin-top: 2rem;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+  max-width: 100%;
+  margin: 2rem auto;
 }
 
 .benefit {
-  text-align: center;
-  font-size: 0.85rem;
-  line-height: 1.4;
+  font-size: 0.7rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+  padding: 0 0.3rem;
 }
 
 .benefit img {
-  width: 36px;
+  width: 28px;
   height: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .benefit p {
