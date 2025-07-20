@@ -839,51 +839,39 @@ footer {
 @media (max-width: 768px) {
   .top-bar,
   .top-bar-left,
-  .top-bar-center,
-  .top-bar-right,
-  .nav-links,
-  nav,
-  header,
-  .hero,
-  section,
-  .cards {
+  .top-bar-right {
     flex-direction: column !important;
-    text-align: center !important;
     align-items: center !important;
-    justify-content: center !important;
-  }
-
-  .nav-links {
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-
-  .top-bar {
-    padding: 10px;
+    text-align: center !important;
   }
 
   .top-bar-left,
   .top-bar-right {
-    justify-content: center;
-    width: 100%;
+    width: 100% !important;
+    justify-content: center !important;
+    padding: 0.5rem 0 !important;
   }
 
-  .center-logo {
-    margin: 10px auto;
+  .top-bar-center img {
     height: 80px;
-    width: auto;
+    margin: 0 auto;
+    display: block;
   }
 
-  .hero h1 {
-    font-size: 2rem;
+  .nav-links {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem 0;
   }
 
-  .hero p {
-    font-size: 1rem;
+  nav {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
   }
 
-  .card {
-    max-width: 90%;
-    margin-bottom: 20px;
+  body {
+    overflow-x: hidden !important;
   }
 }
