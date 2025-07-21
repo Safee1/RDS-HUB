@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dual Control Car Leasing & Hire - RDS HUB LTD</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body>
+<body class="scroll-smooth">
 
  <!-- RDS HUB Navbar -->
-<nav class="bg-[#0b2447] text-white w-full">
-  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-   <!-- Logo centered on mobile, left on desktop -->
-<div class="flex-1 flex justify-center md:justify-start">
-  <img src="assets/logo_shaved.png" alt="RDS HUB" class="h-12" />
-</div>
+<nav class="bg-[#0b2447] text-white w-full fixed top-0 left-0 z-50 shadow">
+  <div class="max-w-7xl mx-auto px-4 pt-4 flex flex-col items-center justify-center text-center relative">
     
+    <!-- Logo (always centered) -->
+    <img src="assets/logo_shaved.png" alt="RDS HUB" class="h-12 mb-2" />
+
+    <!-- Desktop nav (inline under logo) -->
+    <div class="hidden md:flex space-x-6 text-sm font-semibold pb-4">
+      <a href="index.html" class="hover:text-yellow-400">Home</a>
+      <a href="about.html" class="hover:text-yellow-400">About</a>
+      <a href="services.html" class="hover:text-yellow-400">Practical Test Services</a>
+      <a href="dual-control.html" class="hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
+      <a href="reviews.html" class="hover:text-yellow-400">Reviews</a>
+      <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+    </div>
+
     <!-- Mobile menu toggle -->
-    <div class="md:hidden">
+    <div class="md:hidden absolute top-4 right-4">
       <button id="mobile-menu-button" class="focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -26,30 +39,20 @@
         </svg>
       </button>
     </div>
+  </div>
 
-    <!-- Desktop nav links -->
-    <div class="hidden md:flex space-x-6 text-sm font-semibold">
-  <a href="about.html" class="hover:text-yellow-400">About</a>
-  <a href="services.html" class="hover:text-yellow-400">Practical Test Services</a>
-  <a href="dual-control.html" class="hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
-  <a href="reviews.html" class="hover:text-yellow-400">Reviews</a>
-  <a href="contact.html" class="hover:text-yellow-400">Contact</a>
-</div>
-</div> <!-- ✅ Closes the justify-between flex -->
+  <!-- Mobile dropdown nav -->
+  <div id="mobile-menu" class="md:hidden transition-all duration-300 ease-in-out hidden px-4 pb-4 space-y-2 text-sm font-semibold text-center">
+    <a href="index.html" class="block hover:text-yellow-400">Home</a>
+    <a href="about.html" class="block hover:text-yellow-400">About</a>
+    <a href="services.html" class="block hover:text-yellow-400">Practical Test Services</a>
+    <a href="dual-control.html" class="block hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
+    <a href="reviews.html" class="block hover:text-yellow-400">Reviews</a>
+    <a href="contact.html" class="block hover:text-yellow-400">Contact</a>
+  </div>
+</nav>
 
-
-  <!-- Mobile nav links -->
-  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm font-semibold">
-  <a href="about.html" class="block hover:text-yellow-400">About</a>
-  <a href="services.html" class="block hover:text-yellow-400">Practical Test Services</a>
-  <a href="dual-control.html" class="block hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
-  <a href="reviews.html" class="block hover:text-yellow-400">Reviews</a>
-  <a href="contact.html" class="block hover:text-yellow-400">Contact</a>
-</div>
-</nav> <!-- ✅ Closes the nav -->
-
-
-  <div class="main-container">
+<div class="main-container pt-40 scroll-mt-24">
     
     <section class="why-choose-us px-4 py-6">
   <h2 class="text-2xl font-bold text-center mb-6">Why Choose RDS HUB?</h2>
@@ -271,10 +274,19 @@
   <!-- ✅ Tidio Chat Script -->
   <script src="https://code.tidio.co/nw4qbqb3b2jk4g37pf5fetictrwy9zds.js" async></script>
 
-    <script>
+ 
+ <script>
+  // Toggle mobile menu
   document.getElementById("mobile-menu-button").addEventListener("click", function () {
     const menu = document.getElementById("mobile-menu");
     menu.classList.toggle("hidden");
+  });
+
+  // Close menu when any mobile nav link is clicked
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById("mobile-menu").classList.add("hidden");
+    });
   });
 </script>
 
