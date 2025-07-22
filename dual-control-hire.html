@@ -79,13 +79,32 @@
 
  <!-- RDS HUB Navbar -->
 <nav class="bg-[#0b2447] text-white w-full fixed top-0 left-0 z-50 shadow">
-  <div class="w-full flex flex-col items-center justify-center pt-4 px-4 relative text-center">
-    
-    <!-- Logo (always centered) -->
-    <img src="assets/logo_shaved.png" alt="RDS HUB" class="h-12 mb-2" />
+ <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+  <!-- Logo -->
+  <div class="flex-shrink-0">
+    <img src="assets/logo_shaved.png" alt="RDS HUB" class="h-12" />
+  </div>
 
-    <!-- Desktop nav (inline under logo) -->
-    <div class="hidden md:flex space-x-6 text-sm font-semibold pb-4">
+  <!-- Desktop Nav -->
+  <div class="hidden md:flex space-x-6 text-sm font-semibold">
+    <a href="index.html" class="hover:text-yellow-400">Home</a>
+    <a href="about.html" class="hover:text-yellow-400">About</a>
+    <a href="services.html" class="hover:text-yellow-400">Practical Test Services</a>
+    <a href="dual-control.html" class="hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
+    <a href="reviews.html" class="hover:text-yellow-400">Reviews</a>
+    <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+  </div>
+
+  <!-- Mobile menu button -->
+  <div class="md:hidden">
+    <button id="mobile-menu-button" class="focus:outline-none">
+      <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </button>
+  </div>
+</div>
+
+    <!-- Nav links (desktop) -->
+    <div class="hidden md:flex space-x-6 text-sm font-semibold">
       <a href="index.html" class="hover:text-yellow-400">Home</a>
       <a href="about.html" class="hover:text-yellow-400">About</a>
       <a href="services.html" class="hover:text-yellow-400">Practical Test Services</a>
@@ -94,19 +113,16 @@
       <a href="contact.html" class="hover:text-yellow-400">Contact</a>
     </div>
 
-    <!-- Mobile menu toggle -->
-   <div class="md:hidden self-end">
+    <!-- Mobile menu button -->
+    <div class="md:hidden mt-2">
       <button id="mobile-menu-button" class="focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
       </button>
     </div>
   </div>
 
   <!-- Mobile dropdown nav -->
-  <div id="mobile-menu" class="md:hidden transition-all duration-300 ease-in-out hidden px-4 pb-4 space-y-2 text-sm font-semibold text-center">
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm font-semibold text-center">
     <a href="index.html" class="block hover:text-yellow-400">Home</a>
     <a href="about.html" class="block hover:text-yellow-400">About</a>
     <a href="services.html" class="block hover:text-yellow-400">Practical Test Services</a>
