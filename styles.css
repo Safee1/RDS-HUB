@@ -900,4 +900,9 @@ footer {
   .dropdown-menu li {
     margin: 5px 0;
   }
+  nav img {
+  max-width: 100%;
+  height: auto;
+}
+
 }
