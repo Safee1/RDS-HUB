@@ -13,33 +13,34 @@
 </head>
 <body class="scroll-smooth">
 
- <!-- RDS HUB Navbar -->
-<nav class="bg-[#0b2447] text-white w-full fixed top-0 left-0 z-50 shadow">
-  <div class="max-w-7xl mx-auto px-4 pt-4 flex flex-col items-center justify-center text-center relative">
-    
-    <!-- Logo (always centered) -->
-    <img src="assets/logo_shaved.png" alt="RDS HUB" class="h-12 mb-2" />
+<!-- RDS HUB Navbar -->
+<header class="bg-[#0b2447] text-white w-full fixed top-0 left-0 z-50 shadow">
+  <div class="top-logo-wrapper">
+    <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="center-logo">
+  </div>
 
-    <!-- Desktop nav (inline under logo) -->
-    <!-- Desktop nav (styled like contact.html) -->
-<ul class="nav-links hidden md:flex">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About</a></li>
-  <li class="dropdown">
-    <a href="services.html">Practical Test Services</a>
-    <ul class="dropdown-menu">
-      <li><a href="lesson-prices.html">Lesson Prices</a></li>
-      <li><a href="car-for-test.html">xxx</a></li>
-      <li><a href="become-instructor.html">Become an Instructor</a></li>
+  <!-- Desktop Nav (matches contact.html) -->
+  <nav class="hidden md:block">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="services.html">Practical Test Services</a>
+        <ul class="dropdown-menu">
+          <li><a href="lesson-prices.html">Lesson Prices</a></li>
+          <li><a href="car-for-test.html">xxx</a></li>
+          <li><a href="become-instructor.html">Become an Instructor</a></li>
+        </ul>
+      </li>
+      <li><a href="dual-control-hire.html">Dual Control Car Leasing & Hire</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </li>
-  <li><a href="dual-control-hire.html">Dual Control Car Leasing & Hire</a></li>
-  <li><a href="reviews.html">Reviews</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-    
-    <!-- Mobile menu toggle -->
-    <div class="md:hidden absolute top-4 right-4">
+  </nav>
+
+  <!-- Mobile nav toggle -->
+  <div class="md:hidden px-4 pb-2 relative">
+    <div class="absolute top-4 right-4">
       <button id="mobile-menu-button" class="focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -47,18 +48,17 @@
         </svg>
       </button>
     </div>
-  </div>
 
-  <!-- Mobile dropdown nav -->
-  <div id="mobile-menu" class="md:hidden transition-all duration-300 ease-in-out hidden px-4 pb-4 space-y-2 text-sm font-semibold text-center">
-    <a href="index.html" class="block hover:text-yellow-400">Home</a>
-    <a href="about.html" class="block hover:text-yellow-400">About</a>
-    <a href="services.html" class="block hover:text-yellow-400">Practical Test Services</a>
-    <a href="dual-control-hire.html" class="block hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
-    <a href="reviews.html" class="block hover:text-yellow-400">Reviews</a>
-    <a href="contact.html" class="block hover:text-yellow-400">Contact</a>
+    <div id="mobile-menu" class="transition-all duration-300 ease-in-out hidden px-4 pt-8 pb-4 space-y-2 text-sm font-semibold text-center">
+      <a href="index.html" class="block hover:text-yellow-400">Home</a>
+      <a href="about.html" class="block hover:text-yellow-400">About</a>
+      <a href="services.html" class="block hover:text-yellow-400">Practical Test Services</a>
+      <a href="dual-control-hire.html" class="block hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
+      <a href="reviews.html" class="block hover:text-yellow-400">Reviews</a>
+      <a href="contact.html" class="block hover:text-yellow-400">Contact</a>
+    </div>
   </div>
-</nav>
+</header>
 
 <div class="main-container pt-40 scroll-mt-24">
     
