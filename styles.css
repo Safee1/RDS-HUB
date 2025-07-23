@@ -333,6 +333,7 @@ footer {
   border-radius: 6px;
   transition: all 0.25s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
 }
 
 .car-card .btn:hover {
@@ -873,11 +874,6 @@ footer {
   max-width: 100%;
   height: auto;
 }
-
-  .car-card p {
-  margin-bottom: 1rem;
-}
-
  
   
 }
