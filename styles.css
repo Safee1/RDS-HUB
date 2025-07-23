@@ -88,7 +88,8 @@ nav {
 
 a.active {
   background-color: #fcb900;
-  color: #000;
+  color: #facc15;
+  font-weight: bold;
 }
 
 .dropdown-menu {
