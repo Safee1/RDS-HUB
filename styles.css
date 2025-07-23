@@ -55,13 +55,18 @@ nav {
   font-weight: 600;
   padding: 10px 16px;
   border-radius: 6px;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition: all 0.2s ease;
   font-size: 1rem;
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
 
 .nav-links li a:hover {
+  background-color: #fcb900;
+  color: #000;
+}
+
+.nav-links li a.active {
   background-color: #fcb900;
   color: #000;
 }
