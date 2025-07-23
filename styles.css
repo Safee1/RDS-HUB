@@ -9,7 +9,9 @@ body {
 }
 
 header {
-  background-color: #0d213b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .top-logo-wrapper {
@@ -22,11 +24,16 @@ header {
   height: 100px;
   max-width: 200px;
   object-fit: contain;
+  background: white;
+  padding: 6px;
+  border-radius: 6px;
 }
 
 nav {
   background-color: #0d213b;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-bottom: 3px solid #fcb900;
 }
 
 .nav-links {
@@ -44,8 +51,19 @@ nav {
 
 .nav-links li a {
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+  background-color: #fcb900;
+  color: #000;
 }
 
 .dropdown-menu {
