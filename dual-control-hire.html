@@ -21,15 +21,23 @@
     <img src="assets/logo_shaved.png" alt="RDS HUB" class="h-12 mb-2" />
 
     <!-- Desktop nav (inline under logo) -->
-    <div class="hidden md:flex space-x-6 text-sm font-semibold pb-4">
-      <a href="index.html" class="hover:text-yellow-400">Home</a>
-      <a href="about.html" class="hover:text-yellow-400">About</a>
-      <a href="services.html" class="hover:text-yellow-400">Practical Test Services</a>
-      <a href="dual-control-hire.html" class="hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
-      <a href="reviews.html" class="hover:text-yellow-400">Reviews</a>
-      <a href="contact.html" class="hover:text-yellow-400">Contact</a>
-    </div>
-
+    <!-- Desktop nav (styled like contact.html) -->
+<ul class="nav-links hidden md:flex">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="dropdown">
+    <a href="services.html">Practical Test Services</a>
+    <ul class="dropdown-menu">
+      <li><a href="lesson-prices.html">Lesson Prices</a></li>
+      <li><a href="car-for-test.html">xxx</a></li>
+      <li><a href="become-instructor.html">Become an Instructor</a></li>
+    </ul>
+  </li>
+  <li><a href="dual-control-hire.html">Dual Control Car Leasing & Hire</a></li>
+  <li><a href="reviews.html">Reviews</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+    
     <!-- Mobile menu toggle -->
     <div class="md:hidden absolute top-4 right-4">
       <button id="mobile-menu-button" class="focus:outline-none">
