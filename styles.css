@@ -66,11 +66,6 @@ nav {
   color: #000;
 }
 
-.nav-links li a.active {
-  background-color: #fcb900;
-  color: #000;
-}
-
 a.active {
   background-color: #fcb900;
   color: #000;
