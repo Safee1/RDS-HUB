@@ -5,20 +5,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dual Control Car Leasing & Hire - RDS HUB LTD</title>
-  <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css"/>
 </head>
-<body class="scroll-smooth">
+<body>
+  
+<header class="site-header">
+  <!-- All logo/nav content here -->
 
-<!-- RDS HUB Navbar -->
-<header class="bg-[#0b2447] text-white w-full fixed top-0 left-0 z-50 shadow">
-  <!-- Logo centered for desktop -->
   <div class="top-logo-wrapper">
     <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="center-logo" />
   </div>
 
   <!-- Desktop nav -->
-  <nav class="hidden md:block">
+  <nav class="desktop-nav">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -37,8 +36,8 @@
   </nav>
 
   <!-- Mobile nav toggle + menu -->
-  <div class="md:hidden px-4 pb-2 relative">
-    <div class="absolute top-4 right-4">
+ <div class="mobile-nav">
+    <div class="main-container" style="padding-top: 160px;">
       <button id="mobile-menu-button" class="focus:outline-none">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
              viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -47,42 +46,41 @@
       </button>
     </div>
 
-    <div id="mobile-menu" class="transition-all duration-300 ease-in-out hidden px-4 pt-8 pb-4 space-y-2 text-sm font-semibold text-center">
-      <a href="index.html" class="block hover:text-yellow-400">Home</a>
-      <a href="about.html" class="block hover:text-yellow-400">About</a>
-      <a href="services.html" class="block hover:text-yellow-400">Practical Test Services</a>
-      <a href="dual-control-hire.html" class="block hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
-      <a href="reviews.html" class="block hover:text-yellow-400">Reviews</a>
-      <a href="contact.html" class="block hover:text-yellow-400">Contact</a>
+    <div id="mobile-menu" class=" pt-8 pb-4 space-y-2 text-sm font-semibold ">
+      <a href="index.html" class=">Home</a>
+      <a href="about.html" class=">About</a>
+      <a href="services.html" class="">Practical Test Services</a>
+      <a href="dual-control-hire.html" class="">Dual Control Car Leasing & Hire</a>
+      <a href="reviews.html" class=">Reviews</a>
+      <a href="contact.html" class="">Contact</a>
     </div>
   </div>
 </header>
 
-<div class="main-container pt-[220px] scroll-mt-24">
+<div class="main-container" style="padding-top: 160px;">
     
-    <section class="why-choose-us px-4 py-6">
-  <h2 class="text-2xl font-bold text-center mb-6">Why Choose RDS HUB?</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-    <div class="benefit text-center">
-      <img src="assets/icon-low-cost.jpg" alt="Low cost icon" class="mx-auto h-12 mb-2" />
+    <section class="why-choose-us ">
+  <h2 class=" ">Why Choose RDS HUB?</h2>
+    <div class="benefit ">
+      <img src="assets/icon-low-cost.jpg" alt="Low cost icon" class="" />
       <p><strong>Save £300+</strong><br />vs buying a car</p>
     </div>
-    <div class="benefit text-center">
-      <img src="assets/icon-insurance.jpg" alt="Insurance icon" class="mx-auto h-12 mb-2" />
+    <div class="benefit ">
+      <img src="assets/icon-insurance.jpg" alt="Insurance icon" class="" />
       <p><strong>Includes Insurance</strong><br />& VAT</p>
     </div>
-    <div class="benefit text-center">
-      <img src="assets/icon-auto.jpg" alt="Auto icon" class="mx-auto h-12 mb-2" />
+    <div class="benefit ">
+      <img src="assets/icon-auto.jpg" alt="Auto icon" class="" />
       <p><strong>Automatic & Manual</strong><br />Options</p>
     </div>
-    <div class="benefit text-center">
-      <img src="assets/icon-support.jpg" alt="Support icon" class="mx-auto h-12 mb-2" />
+    <div class="benefit ">
+      <img src="assets/icon-support.jpg" alt="Support icon" class="" />
       <p><strong>Breakdown</strong><br />& Support Included</p>
     </div>
   </div>
 </section>
 
-    <div class="car-listings grid grid-cols-1 md:grid-cols-2 gap-8 px-4 py-10">
+   <div class="car-listings">
   <!-- BMW 116D -->
   <div class="car-card">
     <h3>BMW 116D Black</h3>
@@ -285,13 +283,13 @@
   // Toggle mobile menu
   document.getElementById("mobile-menu-button").addEventListener("click", function () {
     const menu = document.getElementById("mobile-menu");
-    menu.classList.toggle("hidden");
+    menu.classList.toggle("");
   });
 
   // Close menu when any mobile nav link is clicked
   document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
-      document.getElementById("mobile-menu").classList.add("hidden");
+      document.getElementById("mobile-menu").classList.add("");
     });
   });
 </script>
