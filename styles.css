@@ -71,6 +71,11 @@ nav {
   color: #000;
 }
 
+a.active {
+  background-color: #fcb900;
+  color: #000;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
