@@ -8,34 +8,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css"/>
   <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  html { scroll-behavior: smooth; }
+  a.active {
+    color: #facc15; /* Tailwind's yellow-400 */
+    font-weight: bold;
+  }
+</style>
 </head>
 <body class="scroll-smooth">
 
 <!-- RDS HUB Navbar -->
 <header class="bg-[#0b2447] text-white w-full fixed top-0 left-0 z-50 shadow">
-  <div class="top-logo-wrapper">
-    <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="center-logo">
-  </div>
+  <div class="flex flex-col items-center py-4">
+    <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="h-[80px] max-w-[200px] bg-white p-2 rounded mb-2">
 
-  <!-- Desktop Nav (matches contact.html) -->
-  <nav class="hidden md:block">
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-      <a href="services.html">Practical Test Services</a>
-      <ul class="dropdown-menu">
-        <li><a href="lesson-prices.html">Lesson Prices</a></li>
-        <li><a href="car-for-test.html">Car for Test</a></li>
-        <li><a href="become-instructor.html">Become an Instructor</a></li>
-      </ul>
-    </li>
-    <li><a href="dual-control-hire.html">Dual Control Car Leasing & Hire</a></li>
-    <li><a href="reviews.html">Reviews</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex justify-center space-x-6 text-sm font-semibold">
+  <a href="index.html" class="hover:text-yellow-400">Home</a>
+  <a href="about.html" class="hover:text-yellow-400">About</a>
+  <a href="services.html" class="hover:text-yellow-400">Practical Test Services</a>
+  <a href="dual-control-hire.html" class="hover:text-yellow-400">Dual Control Car Leasing & Hire</a>
+  <a href="reviews.html" class="hover:text-yellow-400">Reviews</a>
+  <a href="contact.html" class="hover:text-yellow-400">Contact</a>
 </nav>
 
   <!-- Mobile nav toggle -->
@@ -60,7 +54,7 @@
   </div>
 </header>
 
-<div class="main-container pt-40 scroll-mt-24">
+<div class="main-container pt-[160px] scroll-mt-24">
     
     <section class="why-choose-us px-4 py-6">
   <h2 class="text-2xl font-bold text-center mb-6">Why Choose RDS HUB?</h2>
