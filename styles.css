@@ -747,6 +747,10 @@ footer {
   margin-top: 0.5rem;
   color: #555;
 }
+  
+ .car-card p {
+  margin-bottom: 1rem;
+}
 
 /* Fix the button bar inside each car card */
 .price-grid {
@@ -874,6 +878,6 @@ footer {
   max-width: 100%;
   height: auto;
 }
- 
+
   
 }
