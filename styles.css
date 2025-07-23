@@ -40,9 +40,28 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  padding: 0;
-  margin: 0;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding-bottom: 16px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fcb900;
+}
+
+.nav-links a.active {
+  background-color: #fcb900;
+  color: #000;
+  border-radius: 4px;
 }
 
 .nav-links li {
@@ -74,14 +93,21 @@ a.active {
 .dropdown-menu {
   display: none;
   position: absolute;
+  background: #0b2447;
+  padding: 10px;
+  border-radius: 4px;
   top: 100%;
   left: 0;
-  background-color: #0d213b;
-  min-width: 200px;
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .dropdown-menu li a {
