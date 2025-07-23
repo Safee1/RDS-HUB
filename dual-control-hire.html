@@ -12,11 +12,13 @@
 
 <!-- RDS HUB Navbar -->
 <header class="bg-[#0b2447] text-white w-full fixed top-0 left-0 z-50 shadow">
+  <!-- Logo centered for desktop -->
   <div class="top-logo-wrapper">
-    <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="center-logo">
+    <img src="assets/logo_shaved.png" alt="RDS HUB Logo" class="center-logo" />
   </div>
 
-  <nav>
+  <!-- Desktop nav -->
+  <nav class="hidden md:block">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -33,8 +35,8 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  
-  <!-- Mobile nav toggle -->
+
+  <!-- Mobile nav toggle + menu -->
   <div class="md:hidden px-4 pb-2 relative">
     <div class="absolute top-4 right-4">
       <button id="mobile-menu-button" class="focus:outline-none">
