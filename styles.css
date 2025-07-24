@@ -330,8 +330,13 @@ footer {
 }
 
 .benefit img {
-  height: 40px;
   margin-bottom: 10px;
+  max-width: 60px;
+}
+
+.benefit p {
+  margin: 0;
+  font-size: 14px;
 }
 
 .main-container {
@@ -816,6 +821,46 @@ footer {
   
  .car-card p {
   margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .why-choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-choose-us h2 {
+    margin-bottom: 20px;
+  }
+
+  .why-choose-us .benefit {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1%;
+    vertical-align: top;
+  }
+  
+  @media (min-width: 992px) {
+  .why-choose-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-choose-us .benefits-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+  }
+
+  .why-choose-us .benefit {
+    flex: 1 1 200px;
+    min-width: 180px;
+    max-width: 220px;
+  }
 }
 
 /* Fix the button bar inside each car card */
