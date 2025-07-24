@@ -1050,3 +1050,43 @@ footer {
 .mobile-nav {
   display: none;
 }
+  @media (min-width: 768px) {
+  .why-choose-us {
+    max-width: 900px;
+    margin: 0 auto !important;
+    padding: 40px 20px 20px 20px !important;
+  }
+
+  .why-choose-us h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .why-choose-us .benefit {
+    width: 22%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1%;
+    text-align: center;
+  }
+
+  .why-choose-us img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  .why-choose-us p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+@media (min-width: 768px) {
+  .benefits-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+  
