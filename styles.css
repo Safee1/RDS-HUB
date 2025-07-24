@@ -436,6 +436,8 @@ footer {
   padding: 20px;
   font-weight: bold;
   text-align: center;
+  font-size: 1rem;
+  border-top: 3px solid #fcb900;
 }
 
 .trust-item {
@@ -481,14 +483,6 @@ footer {
 .icon-step {
   color: #0077cc;
   margin-bottom: 10px;
-}
-
-.trust-strip {
-  font-size: 1rem;
-  font-weight: 600;
-  gap: 25px;
-  padding: 25px 15px;
-  border-top: 3px solid #fcb900;
 }
 
 .trust-item i {
@@ -925,10 +919,55 @@ footer {
   .dropdown-menu li {
     margin: 5px 0;
   }
+
   nav img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-  
+/* ✅ Separate media query – don't nest it */
+@media (max-width: 768px) {
+  .mobile-nav {
+    display: block;
+  }
+
+  #mobile-menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  #mobile-menu-button svg {
+    width: 30px;
+    height: 30px;
+    stroke: #333;
+  }
+
+  #mobile-menu a {
+    padding: 10px 15px;
+    background: #f9f9f9;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  #mobile-menu a:hover {
+    background: #f0f0f0;
+  }
 }
+
+/* ✅ Outside all media queries */
+#mobile-menu {
+  display: none;
+}
+
+#mobile-menu.show {
+  display: flex !important;
+  flex-direction: column;
+  background: white;
+  padding: 10px;
+  gap: 10px;
+}
+
