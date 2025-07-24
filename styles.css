@@ -1137,5 +1137,14 @@ footer {
   padding-top: 0 !important;
 }
 
+/* Kill unwanted space between header and first section */
+header {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
 
+section.why-choose-us {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
   
