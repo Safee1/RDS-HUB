@@ -305,12 +305,12 @@ footer {
 
 .why-choose-us {
   text-align: center;
-  padding: 0 20px 30px 20px;
+  margin-top: -50px !important;
+  padding-top: 70px !important;
+  padding-bottom: 40px;
   border-top: 3px solid #f4b400;
   border-bottom: 3px solid #f4b400;
   background-color: #f9fbfd;
-  margin-top: -85px !important;
-  padding-top: 85px !important;
 }
 
 }
