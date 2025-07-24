@@ -305,11 +305,11 @@ footer {
 
 .why-choose-us {
   text-align: center;
-  padding: 0 20px 40px 20px; /* top = 0, bottom = 40px */
+  padding: 0 20px 30px 20px;
   border-top: 3px solid #f4b400;
   border-bottom: 3px solid #f4b400;
   background-color: #f9fbfd;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .benefit-container {
