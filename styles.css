@@ -896,6 +896,7 @@ footer {
   border-radius: 6px;
   font-size: 0.92rem;
   line-height: 1.5;
+  
 }
 
 .rds-offer-box .rds-heading {
@@ -1082,11 +1083,14 @@ footer {
 }
 @media (min-width: 768px) {
   .benefits-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem; /* adjust spacing between boxes */
+  margin-top: 0; /* remove default top margin */
+  padding: 0; /* remove any top/bottom padding */
+}
+
 }
   section {
   margin-top: 0;
@@ -1101,5 +1105,27 @@ footer {
   padding: 40px 0 80px 0;
 }
 
+.why-choose-us {
+  padding-top: 8rem; /* pushes it below sticky header */
+  padding-bottom: 2rem;
+}
+
+.why-choose-us h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.benefit {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.benefit {
+  flex: 1 1 200px;
+  max-width: 250px;
+  text-align: center;
+}
 
   
