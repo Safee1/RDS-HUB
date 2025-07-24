@@ -1147,4 +1147,13 @@ section.why-choose-us {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
-  
+
+  .page-wrapper {
+  margin-top: 0;
+}
+  @media screen and (min-width: 1024px) {
+  .page-wrapper {
+    margin-top: 0;
+  }
+}
+
