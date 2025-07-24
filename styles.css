@@ -926,39 +926,7 @@ footer {
   }
 }
 
-/* ✅ Separate media query – don't nest it */
-@media (max-width: 768px) {
-  .mobile-nav {
-    display: block;
-  }
-
-  #mobile-menu-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-  }
-
-  #mobile-menu-button svg {
-    width: 30px;
-    height: 30px;
-    stroke: #333;
-  }
-
-  #mobile-menu a {
-    padding: 10px 15px;
-    background: #f9f9f9;
-    text-decoration: none;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-
-  #mobile-menu a:hover {
-    background: #f0f0f0;
-  }
-}
-
-/* ✅ Outside all media queries */
+/* Mobile Menu Styles */
 #mobile-menu {
   display: none;
 }
@@ -971,3 +939,48 @@ footer {
   gap: 10px;
 }
 
+#mobile-menu a {
+  padding: 10px 15px;
+  background: #f9f9f9;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#mobile-menu a:hover {
+  background: #f0f0f0;
+}
+
+/* Hide button on desktop */
+#mobile-menu-button {
+  display: none;
+}
+
+/* Show button on mobile */
+@media (max-width: 768px) {
+  #mobile-menu-button {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  #mobile-menu-button svg {
+    width: 30px;
+    height: 30px;
+    stroke: #333;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
