@@ -1127,5 +1127,15 @@ footer {
   max-width: 250px;
   text-align: center;
 }
+  header, nav {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.why-choose-us {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 
   
