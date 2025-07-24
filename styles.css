@@ -305,8 +305,8 @@ footer {
 
 .why-choose-us {
   text-align: center;
-  margin-top: -50px !important;
-  padding-top: 70px !important;
+  margin-top: -0px;
+  padding-top: 0px;
   padding-bottom: 40px;
   border-top: 3px solid #f4b400;
   border-bottom: 3px solid #f4b400;
@@ -1088,5 +1088,18 @@ footer {
     flex-wrap: wrap;
   }
 }
+  section {
+  margin-top: 0;
+  padding-top: 0;
+}
+#why-choose {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+  .section-spacing {
+  margin-top: 0 !important;
+  padding: 40px 0 80px 0;
+}
+
 
   
