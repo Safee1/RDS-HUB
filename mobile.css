@@ -1,13 +1,9 @@
-/* -------------------- */
-/* Mobile layout tweaks */
-/* -------------------- */
 @media (max-width: 768px) {
   .contact-page {
     margin: 30px auto;
     padding: 0 10px;
   }
 
-  /* Logo */
   .top-logo-wrapper {
     width: 100%;
     display: flex;
@@ -24,7 +20,6 @@
     display: block;
   }
 
-  /* Nav container */
   nav {
     text-align: center;
     padding: 10px;
@@ -35,7 +30,6 @@
     height: auto;
   }
 
-  /* Nav links hidden by default, slide open when toggled */
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -70,11 +64,25 @@
     font-size: 1rem;
   }
 
-  /* Dropdown menus */
+  .dropdown-toggle {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+  }
+
   .dropdown-menu {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
+    background: #0d213b;
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .dropdown-menu.open {
@@ -86,11 +94,12 @@
   }
 
   .dropdown-menu li a {
-    padding: 10px;
+    padding: 12px 20px;
+    display: block;
+    color: white;
     font-size: 0.95rem;
   }
 
-  /* Mobile hamburger button */
   #mobile-menu-button {
     display: block;
     position: absolute;
@@ -104,10 +113,9 @@
   }
 
   #mobile-menu-button svg rect {
-    fill: #fcb900; /* Orange hamburger bars */
+    fill: #fcb900;
   }
 
-  /* WhatsApp floating button */
   #whatsapp-button {
     bottom: 15px;
     right: 15px;
@@ -119,7 +127,6 @@
     height: 36px;
   }
 
-  /* WhatsApp action buttons on contact page */
   .contact-page a {
     display: block;
     width: 100%;
@@ -128,10 +135,8 @@
     margin-bottom: 10px;
   }
 
-  /* General mobile font fix */
   body {
     font-size: 16px;
     padding: 0 10px;
   }
 }
-
