@@ -867,16 +867,6 @@ footer {
     margin-bottom: 20px;
   }
 
-    .why-choose-us .benefits-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1000px;
-  }
-}
-
-
   .why-choose-us .benefits-wrapper {
     display: flex;
     justify-content: center;
@@ -885,7 +875,3 @@ footer {
     max-width: 1000px;
   }
 }
-
-
-
-
