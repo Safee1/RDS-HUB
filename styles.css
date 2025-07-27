@@ -47,6 +47,7 @@ nav {
   padding-bottom: 16px;
 }
 
+
 .nav-links a {
   color: white;
   text-decoration: none;
@@ -88,6 +89,7 @@ nav {
   top: 100%;
   left: 0;
 }
+
 
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -875,3 +877,16 @@ footer {
     max-width: 1000px;
   }
 }
+
+/* Hide mobile hamburger and dropdown toggle on desktop */
+#mobile-menu-button,
+.dropdown-toggle,
+.mobile-only {
+  display: none;
+}
+
+/* Make sure this shows only on desktop */
+.desktop-only {
+  display: inline-block;
+}
+
