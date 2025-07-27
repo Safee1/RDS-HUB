@@ -50,14 +50,14 @@
     <li><a href="about.html">About</a></li>
 
     <li class="dropdown">
-      <a href="services.html">Practical Test Services</a>
-      <!-- ✅ Dropdown menu -->
-      <ul class="dropdown-menu">
-        <li><a href="lesson-prices.html">Lesson Prices</a></li>
-        <li><a href="car-for-test.html">xxx</a></li>
-        <li><a href="become-instructor.html">Become an Instructor</a></li>
-      </ul>
-    </li>
+  <button class="dropdown-toggle" type="button">Practical Test Services</button>
+  <ul class="dropdown-menu">
+       <li><a href="lesson-prices.html">Lesson Prices</a></li>
+    <li><a href="car-for-test.html">xxx</a></li>
+    <li><a href="become-instructor.html">Become an Instructor</a></li>
+  </ul>
+</li>
+
 
     <li><a href="dual-control-hire.html">Dual Control Car Leasing & Hire</a></li>
     <li><a href="reviews.html">Reviews</a></li>
@@ -90,13 +90,23 @@
   <script src="https://code.tidio.co/nw4qbqb3b2jk4g37pf5fetictrwy9zds.js" async></script>
 
   <script>
-    const mobileMenuBtn = document.getElementById('mobile-menu-button');
-    const navLinks = document.getElementById('mobile-nav');
-  
-    mobileMenuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
+  const mobileMenuBtn = document.getElementById('mobile-menu-button');
+  const navLinks = document.getElementById('mobile-nav');
+
+  mobileMenuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  // Mobile dropdown toggle
+  document.querySelectorAll('.dropdown-toggle').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const dropdownMenu = btn.nextElementSibling;
+      dropdownMenu.classList.toggle('open');
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
