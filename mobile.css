@@ -10,7 +10,7 @@
     padding: 0 10px;
   }
 
-  /* Logo and nav */
+  /* Logo */
   .top-logo-wrapper {
     width: 100%;
     display: flex;
@@ -27,6 +27,7 @@
     display: block;
   }
 
+  /* Nav container */
   nav {
     text-align: center;
     padding: 10px;
@@ -37,13 +38,29 @@
     height: auto;
   }
 
+  /* Nav links hidden by default, slide open when toggled */
   .nav-links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding-left: 0;
+    background-color: #0d213b;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
   }
+
+  .nav-links.open {
+  max-height: 400px;
+  padding: 20px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: visible;
+}
 
   .nav-links li {
     list-style: none;
@@ -58,17 +75,15 @@
 
   /* Dropdown menus */
   .dropdown-menu {
-    display: none;
-    flex-direction: column;
-    position: static;
-    width: 100%;
-    background-color: #0d213b;
-    padding: 0;
-  }
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
 
-  .dropdown:hover .dropdown-menu {
-    display: flex;
-  }
+.dropdown-menu.open {
+  max-height: 300px;
+}
+
 
   .dropdown-menu li {
     margin: 5px 0;
@@ -79,7 +94,7 @@
     font-size: 0.95rem;
   }
 
-  /* Mobile nav button */
+  /* Mobile hamburger button */
   #mobile-menu-button {
     display: block;
     position: absolute;
@@ -92,17 +107,11 @@
     padding: 10px;
   }
 
-  #mobile-menu-button svg {
-    width: 30px;
-    height: 30px;
-    stroke: #333;
+  #mobile-menu-button svg rect {
+    fill: #fcb900; /* Orange hamburger bars */
   }
 
-  .mobile-nav {
-    display: block;
-  }
-
-  /* WhatsApp button */
+  /* WhatsApp floating button */
   #whatsapp-button {
     bottom: 15px;
     right: 15px;
@@ -114,7 +123,7 @@
     height: 36px;
   }
 
-  /* Contact button block link */
+  /* WhatsApp action buttons on contact page */
   .contact-page a {
     display: block;
     width: 100%;
