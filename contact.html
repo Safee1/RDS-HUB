@@ -7,27 +7,41 @@
   <link rel="stylesheet" href="styles.css"/>
   <link rel="stylesheet" href="mobile.css">
   <style>
-    #whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      background-color: #25d366;
-      padding: 10px;
-      border-radius: 50%;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  #whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  #whatsapp-button img {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+  }
+  .contact-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+  }
+
+  /* Prevent mobile flicker without affecting desktop */
+  @media (max-width: 768px) {
+    .nav-links,
+    .dropdown-menu {
+      visibility: hidden;
     }
-    #whatsapp-button img {
-      width: 40px;
-      height: 40px;
-      filter: invert(100%);
+
+    .nav-links.open,
+    .dropdown-menu.open {
+      visibility: visible;
     }
-    .contact-page {
-      max-width: 600px;
-      margin: 50px auto;
-      padding: 0 20px;
-    }
-  </style>
+  }
+</style>
+
 </head>
 <body>
   <div class="top-logo-wrapper">
