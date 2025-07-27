@@ -91,9 +91,7 @@ nav {
 }
 
 
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
+
 
 .dropdown-menu a {
   display: block;
@@ -109,9 +107,7 @@ nav {
   white-space: nowrap;
 }
 
-.nav-links li:hover .dropdown-menu {
-  display: block;
-}
+
 
 .hero {
   background: linear-gradient(to right, #1a2e47, #234472);
