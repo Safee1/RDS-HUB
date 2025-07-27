@@ -88,5 +88,15 @@
 
   <!-- ✅ Tidio Chat Script -->
   <script src="https://code.tidio.co/nw4qbqb3b2jk4g37pf5fetictrwy9zds.js" async></script>
+
+  <script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-button');
+    const navLinks = document.getElementById('mobile-nav');
+  
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  </script>
+
 </body>
 </html>
