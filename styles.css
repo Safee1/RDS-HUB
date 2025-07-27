@@ -890,3 +890,6 @@ footer {
   display: inline-block;
 }
 
+#mobile-menu-button {
+  display: none;
+}
