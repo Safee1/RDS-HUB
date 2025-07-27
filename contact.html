@@ -103,17 +103,19 @@
   <!-- ✅ Tidio Chat Script -->
   <script src="https://code.tidio.co/nw4qbqb3b2jk4g37pf5fetictrwy9zds.js" async></script>
 
-  <script>
+ <script>
+  // Mobile nav toggle
   const mobileMenuBtn = document.getElementById('mobile-menu-button');
-  const navLinks = document.getElementById('mobile-nav');
+  const navLinks = document.querySelector('.nav-links');
+  if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  }
 
-  mobileMenuBtn.addEventListener('click', () => {
-    navLinks.classList.toggle('open');
-  });
-
+  // Mobile dropdown toggle for Practical Test Services
   document.querySelectorAll('.dropdown-toggle').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
+    btn.addEventListener('click', () => {
       const dropdownMenu = btn.nextElementSibling;
       dropdownMenu.classList.toggle('open');
     });
