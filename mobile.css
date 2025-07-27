@@ -1,8 +1,16 @@
 @media (max-width: 768px) {
-  /* Mobile-specific styles here */
-}
+  /* General */
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
 
-@media (max-width: 768px) {
+  .contact-page {
+    margin: 30px auto;
+    padding: 0 10px;
+  }
+
+  /* Logo and nav */
   .top-logo-wrapper {
     width: 100%;
     display: flex;
@@ -24,6 +32,11 @@
     padding: 10px;
   }
 
+  nav img {
+    max-width: 100%;
+    height: auto;
+  }
+
   .nav-links {
     display: flex;
     flex-direction: column;
@@ -36,9 +49,20 @@
     list-style: none;
   }
 
+  .nav-links a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+
+  /* Dropdown menus */
   .dropdown-menu {
     display: none;
     flex-direction: column;
+    position: static;
+    width: 100%;
+    background-color: #0d213b;
     padding: 0;
   }
 
@@ -50,13 +74,12 @@
     margin: 5px 0;
   }
 
-  nav img {
-    max-width: 100%;
-    height: auto;
+  .dropdown-menu li a {
+    padding: 10px;
+    font-size: 0.95rem;
   }
-}
 
-@media (max-width: 768px) {
+  /* Mobile nav button */
   #mobile-menu-button {
     display: block;
     position: absolute;
@@ -78,45 +101,8 @@
   .mobile-nav {
     display: block;
   }
-}
 
-@media (max-width: 768px) {
-  body {
-    font-size: 16px;
-    padding: 0 10px;
-  }
-
-  .contact-page {
-    margin: 30px auto;
-    padding: 0 10px;
-  }
-
-  .nav-links a {
-    display: block;
-    width: 100%;
-    padding: 12px 0;
-    font-size: 1rem;
-  }
-
-  .dropdown-menu {
-    position: static;
-    width: 100%;
-    background-color: #0d213b;
-  }
-
-  .dropdown-menu li a {
-    padding: 10px;
-    font-size: 0.95rem;
-  }
-
-  .contact-page a {
-    display: block;
-    width: 100%;
-    font-size: 1rem;
-    padding: 14px;
-    margin-bottom: 10px;
-  }
-
+  /* WhatsApp button */
   #whatsapp-button {
     bottom: 15px;
     right: 15px;
@@ -127,8 +113,13 @@
     width: 36px;
     height: 36px;
   }
+
+  /* Contact button block link */
+  .contact-page a {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 14px;
+    margin-bottom: 10px;
+  }
 }
-
-
-
-
