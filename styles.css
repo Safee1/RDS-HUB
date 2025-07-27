@@ -79,12 +79,6 @@ nav {
   color: #000;
 }
 
-a.active {
-  background-color: #fcb900;
-  color: #facc15;
-  font-weight: bold;
-}
-
 .dropdown-menu {
   display: none;
   position: absolute;
