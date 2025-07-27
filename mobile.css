@@ -64,7 +64,7 @@
     font-size: 1rem;
   }
 
-  .dropdown-toggle {
+    .dropdown-toggle {
     display: block;
     width: 100%;
     padding: 12px 20px;
@@ -76,6 +76,7 @@
     cursor: pointer;
   }
 
+
   .dropdown-menu {
     max-height: 0;
     overflow: hidden;
@@ -86,7 +87,7 @@
   }
 
   .dropdown-menu.open {
-    max-height: 300px;
+    max-height: 400px;
   }
 
   .dropdown-menu li {
